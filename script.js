@@ -32,5 +32,5 @@ const controllerfN = (action) => {
 
 // inp-controller-fn
 const inpControllerfN = (value) => {
-
-}
+  inp1El.value += value;
+};

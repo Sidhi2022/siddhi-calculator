@@ -2,7 +2,7 @@
 <html lang="en-US" dir="ltr">
   <head>
     <title>sidhi - calculator</title>
-    <link rel="./calci.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
@@ -14,6 +14,16 @@
         <input id="inp2" type="text" placeholder="value 2" />
         <br /><br />
         <div class="buttons-con" style="text-align: center">
+          <input type="button" value="1" onclick="inpControllerfN(1)" />
+          <input type="button" value="2" onclick="inpControllerfN(2)" />
+          <input type="button" value="3" onclick="inpControllerfN(3)" />
+          <input type="button" value="4" onclick="inpControllerfN(4)" /><br>
+          <input type="button" value="5" onclick="inpControllerfN(5)" />
+          <input type="button" value="6" onclick="inpControllerfN(6)" />
+          <input type="button" value="7" onclick="inpControllerfN(7)" />
+          <input type="button" value="8" onclick="inpControllerfN(8)" /><br>
+          <input type="button" value="9" onclick="inpControllerfN(9)" />
+          <input type="button" value="0" onclick="inpControllerfN(0)" /><br>
           <input type="button" value="+" onclick="controllerfN('sum')" />
           <input type="button" value="-" onclick="controllerfN('sub')" />
           <input type="button" value="*" onclick="controllerfN('mul')" />
@@ -23,6 +33,6 @@
         <input id="out" type="text" placeholder="output" />
       </div>
     </div>
-    <script src="./calci.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
