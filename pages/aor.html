@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav><a href="../index.html">home</a><br /><br /></nav>
+    </header>
+    <section class="input">
+      <input
+        type="number"
+        placeholder="length"
+        id="len_Inp"
+        onkeyup="calculateFn()"
+      />
+      <input
+        type="number"
+        placeholder="breath"
+        id="bre_Inp"
+        onkeyup="calculateFn()"
+      />
+      <p>area = (length * breath)</p>
+      <input type="number" placeholder="output" id="outputInp" />
+    </section>
+    <script>
+      const baseInp = document.getElementById("len_Inp");
+      const heightInp = document.getElementById("bre_Inp");
+      const outputInp = document.getElementById("outputInp");
+      const calculateFn = () => {
+        outputInp.value = parseInt(len_Inp.value) * parseInt(bre_Inp.value);
+      };
+    </script>
+  </body>
+</html>

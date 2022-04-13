@@ -1,38 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <title>sidhi - calculator</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-
-  <body>
-    <div>
-      <h1 style="text-align: center">Simple Js Calculator</h1>
-      <div class="cal-body" style="width: 100%; text-align: center">
-        <input id="inp1" type="text" placeholder="value 1" />
-        <br />
-        <input id="inp2" type="text" placeholder="value 2" />
-        <br /><br />
-        <div class="buttons-con" style="text-align: center">
-          <input type="button" value="1" onclick="inpControllerfN(1)" />
-          <input type="button" value="2" onclick="inpControllerfN(2)" />
-          <input type="button" value="3" onclick="inpControllerfN(3)" />
-          <input type="button" value="4" onclick="inpControllerfN(4)" /><br>
-          <input type="button" value="5" onclick="inpControllerfN(5)" />
-          <input type="button" value="6" onclick="inpControllerfN(6)" />
-          <input type="button" value="7" onclick="inpControllerfN(7)" />
-          <input type="button" value="8" onclick="inpControllerfN(8)" /><br>
-          <input type="button" value="9" onclick="inpControllerfN(9)" />
-          <input type="button" value="0" onclick="inpControllerfN(0)" /><br>
-          <input type="button" value="+" onclick="controllerfN('sum')" />
-          <input type="button" value="-" onclick="controllerfN('sub')" />
-          <input type="button" value="*" onclick="controllerfN('mul')" />
-          <input type="button" value="/" onclick="controllerfN('div')" />
-        </div>
-        <br /><br />
-        <input id="out" type="text" placeholder="output" />
-      </div>
-    </div>
-    <script src="./script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet"type="text/css" href="style.css">  -->
+    <title>MATHEMATICAL CALCULATION</title>
+</head>
+<body>
+    <main>
+        <h1><u>geometric calculation</u></h1>
+        <section class="options">
+            <h1>#select your choice</h1>
+            <ul class="formula">
+                <li>
+                    <a href="./pages/aot.html">
+                        <h2 style="display: inline"> 1). Area of Triangle</h2>
+                        <img src="https://mcatlas.org/filetransfer/GIS/Images/Icons/ADA%20Collision%20Map%20Icons%20PNG%20Files/Fatality-Icons/Bicycle-Involved-Fatality-Icon-PNG/Bicycle-Involved-Fatality-Circular%20App%20Icon%20Main%20-%201024x1024.png" width="4%">
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/aor.html">
+                        <h2 style="display: inline"> 2). Area of Rectangle</h2>
+                        <img src="https://media.istockphoto.com/vectors/rectangle-perfect-shapes-only-black-and-white-for-student-preschool-vector-id1313868058?k=20&m=1313868058&s=170667a&w=0&h=14eNrINJO03hsnw8D9ufgQF2Uf_Oga3Q9wq71SZyJq4=" width="4%">
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/aos.html">
+                        <h2 style="display: inline"> 3). Area of Square</h2>
+                        <img src="https://c8.alamy.com/comp/2C14DCX/black-color-line-in-blank-square-shape-on-white-paper-background-2C14DCX.jpg" width="4%">
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/aoc.html">
+                        <h2 style="display: inline"> 4). Area of Circle</h2>
+                        <img src="https://thumbs.dreamstime.com/z/vector-circle-shape-frame-black-rope-your-element-design-isolated-white-circle-shape-frame-black-rope-your-105964617.jpg" width="4%">
+                    </a>
+                </li>
+            </div>
+        </section>
+        <hr>
+        <hr>
+        <h1><u>simple calculation</u></h1>
+        <section class="simple">
+            <div class="cal-body" style="width: 100%; text-align: center">
+                <input id="inp1" type="text" placeholder="value 1" />
+                <br />
+                <input id="inp2" type="text" placeholder="value 2" />
+                <br /><br />
+                <div class="buttons-con" style="text-align: center">
+                  <input type="button" value="1" onclick="inpControllerfN(1)" />
+                  <input type="button" value="2" onclick="inpControllerfN(2)" />
+                  <input type="button" value="3" onclick="inpControllerfN(3)" />
+                  <input type="button" value="4" onclick="inpControllerfN(4)" /><br>
+                  <input type="button" value="5" onclick="inpControllerfN(5)" />
+                  <input type="button" value="6" onclick="inpControllerfN(6)" />
+                  <input type="button" value="7" onclick="inpControllerfN(7)" />
+                  <input type="button" value="8" onclick="inpControllerfN(8)" /><br>
+                  <input type="button" value="9" onclick="inpControllerfN(9)" />
+                  <input type="button" value="0" onclick="inpControllerfN(0)" /><br>
+                  <input type="button" value="+" onclick="controllerfN('sum')" />
+                  <input type="button" value="-" onclick="controllerfN('sub')" />
+                  <input type="button" value="*" onclick="controllerfN('mul')" />
+                  <input type="button" value="/" onclick="controllerfN('div')" />
+                </div>
+                <br /><br />
+                <input id="out" type="text" placeholder="output" />
+              </div>
+        </section>
+    </main>
+    <script src="./simple-calculator.js"></script>
+</body>
 </html>
